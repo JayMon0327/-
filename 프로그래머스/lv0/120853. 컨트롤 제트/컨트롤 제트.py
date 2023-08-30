@@ -1,13 +1,8 @@
 def solution(s):
-    tokens = s.split()
-    result = 0
-    count = 0
-    
-    for token in tokens:
-        if token == "Z":
-            result -= count
+    stack = []
+    for i in s.split():
+        if i != "Z":
+            stack.append(int(i))
         else:
-            count = int(token)
-            result += count
-    return result
-    
+            stack.pop()
+    return sum(stack)
