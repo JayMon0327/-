@@ -13,14 +13,4 @@ public class Solution {
         return min + " " + max;
     }
 
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        String s1 = "1 2 3 4";
-        String s2 = "-1 -2 -3 -4";
-        String s3 = "-1 -1";
-
-        System.out.println(solution.solution(s1)); // "1 4"
-        System.out.println(solution.solution(s2)); // "-4 -1"
-        System.out.println(solution.solution(s3)); // "-1 -1"
-    }
 }
