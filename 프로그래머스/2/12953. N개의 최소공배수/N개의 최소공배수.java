@@ -22,6 +22,7 @@ public class Solution {
         return gcd(y, x % y);
     }
 
+    
     public static int lcm(int x, int y) {
         return x * y / gcd(x, y);
     }
