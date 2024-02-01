@@ -11,7 +11,7 @@ public class Solution {
         for (int right = 0; right < sequence.length; right++) {
             sum += sequence[right]; // 슬라이딩 윈도우의 오른쪽 끝 인덱스를 늘려가며 합 갱신
 
-            // 부분 수열의 합이 k를 초과하는 경우
+            
             while (sum > k) {
                 sum -= sequence[left++]; // 부분 수열의 합이 k 이하가 될 때까지 왼쪽 끝 인덱스를 이동시키며 합 갱신
             }
