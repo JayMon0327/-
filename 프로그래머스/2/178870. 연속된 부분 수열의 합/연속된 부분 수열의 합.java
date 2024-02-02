@@ -11,7 +11,6 @@ public class Solution {
         for (int right = 0; right < sequence.length; right++) {
             sum += sequence[right]; // 슬라이딩 윈도우의 오른쪽 끝 인덱스를 늘려가며 합 갱신
 
-            
             while (sum > k) {
                 sum -= sequence[left++]; // 부분 수열의 합이 k 이하가 될 때까지 왼쪽 끝 인덱스를 이동시키며 합 갱신
             }
@@ -40,10 +39,11 @@ public class Solution {
         return answer;
     }
 
+    
+    // 테스트
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        // 예시 입력에 대한 테스트
         int[] sequence1 = {1, 2, 3, 4, 5};
         int k1 = 7;
         System.out.println(Arrays.toString(solution.solution(sequence1, k1))); // [2, 3]
