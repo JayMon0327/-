@@ -10,15 +10,15 @@ public class Solution {
 
         // Test cases
         String rny_string1 = "masterpiece";
-        System.out.println(solution.solution(rny_string1)); // Output: "rnasterpiece"
+        System.out.println(solution.solution(rny_string1)); 
 
         String rny_string2 = "programmers";
-        System.out.println(solution.solution(rny_string2)); // Output: "prograrnrners"
+        System.out.println(solution.solution(rny_string2)); 
 
         String rny_string3 = "jerry";
-        System.out.println(solution.solution(rny_string3)); // Output: "jerry"
+        System.out.println(solution.solution(rny_string3)); 
 
         String rny_string4 = "burn";
-        System.out.println(solution.solution(rny_string4)); // Output: "burn"
+        System.out.println(solution.solution(rny_string4)); 
     }
 }
