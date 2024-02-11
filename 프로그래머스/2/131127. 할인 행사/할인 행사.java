@@ -18,7 +18,7 @@ public class Solution {
         int result = 0;
         for (int i = 0; i <= discount.length - 10; i++) {
             if (i > 0) {
-                // 윈도우를 업데이트합니다: 이전 첫 번째 제품을 제거하고 새 제품을 추가합니다.
+                // 윈도우를 업데이트합니다: 이전 첫 번째 제품을 제거하고 새 제품을 추가
                 window.put(discount[i - 1], window.get(discount[i - 1]) - 1);
                 if (window.get(discount[i - 1]) == 0) {
                     window.remove(discount[i - 1]);
